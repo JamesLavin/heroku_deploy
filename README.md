@@ -1,6 +1,8 @@
 # HerokuDeploy
 
-TODO: Write a gem description
+Manage Ruby application deployments to Heroku
+
+** NOTE: this is being developed; nothing is ready yet. **
 
 ## Installation
 
