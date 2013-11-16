@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -o errexit
 
-curl -so .roboconf.sh https://raw.github.com/hedgeyedev/roboconf/master/roboconf.sh
-source .roboconf.sh
+# This is now available as the gem
+# curl -so .roboconf.sh https://raw.github.com/hedgeyedev/roboconf/master/roboconf.sh
+# source .roboconf.sh
 
 if [ $# -ne 1 ]; then
   show_prep_release_usage_and_exit
