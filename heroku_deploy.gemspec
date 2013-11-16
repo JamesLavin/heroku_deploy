@@ -8,8 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = HerokuDeploy::VERSION
   spec.authors       = ['Scott Smith']
   spec.email         = ['scottnelsonsmith@gmail.com']
-  spec.description   = %q{In addition to pushing application to Heroku, beforehand it determines whether
-Heroku environment variables have changed and uploads the changes if there are any.}
+  spec.description   = <<EOF
+In addition to pushing application to Heroku, beforehand it determines whether
+Heroku environment variables have changed and uploads the changes if there are any.
+EOF
   spec.summary       = %q{Manages deploying Ruby applications to Heroku}
   spec.homepage      = ''
   spec.license       = 'MIT'
