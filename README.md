@@ -2,8 +2,6 @@
 
 Manage Ruby application deployments to Heroku
 
-** NOTE: this is being developed; nothing is ready yet. **
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -12,7 +10,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install --binstubs
 
 Or install it yourself as:
 
@@ -20,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### To install your application into your Heroku staging server
+
+    $ bin/deploy_staging <your Heroku staging remote name>
+
+Example
+
+    $ bin/deploy_staging hedgeye-stv
+
+### To install your application into your Heroku production server
+
+    $ bin/deploy_production <your Heroku staging remote name>
 
 ## Contributing
 
