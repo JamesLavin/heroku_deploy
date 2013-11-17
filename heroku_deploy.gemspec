@@ -23,5 +23,4 @@ EOF
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'roboconf', '~> 0.0.2'
 end
