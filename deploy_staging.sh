@@ -35,7 +35,7 @@ function update_submodules_and_commit_shas {
 # and that doing so requires placing credentials on this server. I can't do that.
 
 branch_name=$(git rev-parse --abbrev-ref HEAD)
-echo_cmd git push --force "$app" "$branch_name":master
+echo_cmd git push --force "$app" "$branch_name"
 
 # Browse Heroku to make sure the app starts.
 curl "http://$app.herokuapp.com/" > /dev/null
