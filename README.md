@@ -4,31 +4,25 @@ Manage Ruby application deployments to Heroku
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone this project to your working directory (example: presuming your working directory is ~/work)
 
-    gem 'heroku_deploy'
-
-And then execute:
-
-    $ bundle install --binstubs
-
-Or install it yourself as:
-
-    $ gem install heroku_deploy
+    $ cd ~/work
+    $ git clone git@github.com:hedgeyedev/heroku_deploy.git
 
 ## Usage
 
 ### To install your application into your Heroku staging server
 
-    $ bin/deploy_staging <your Heroku staging remote name>
+    $ cd ~/work/<your application project root>
+    $ ../heroku_deploy/deploy_staging <your Heroku staging remote name>
 
 Example
 
-    $ bin/deploy_staging hedgeye-stv
+    $ ../deploy_staging hedgeye-stv
 
 ### To install your application into your Heroku production server
 
-    $ bin/deploy_production <your Heroku staging remote name>
+    $ ../heroku_deploy/deploy_production <your Heroku staging remote name>
 
 ## Contributing
 
