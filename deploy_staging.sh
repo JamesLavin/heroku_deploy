@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
 set -o errexit
 
+echo "Beginning deploy_staging.sh - \$1 is '$1'"
 echo "In deploy_staging.sh - about to source roboconf.sh"
 source ../roboconf/roboconf.sh
+echo "In deploy_staging.sh - finished sourcing roboconf.sh"
 
+echo "Before (maybe) invoking show_prep_release_usage_and_exit"
 if [ $# -ne 1 ]; then
-  show_prep_release_usage_and_exit
+
+  echo_cmd show_prep_release_usage_and_exit
 fi
 
 app="$1"
 
 HEROKU_CONSTANTS=.heroku_env_staging
-run_heroku_config_if_settings_changed
+echo_cmd run_heroku_config_if_settings_changed
 
 function update_submodules_and_commit_shas {
   echo_cmd git submodule update --remote --merge
