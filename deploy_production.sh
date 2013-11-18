@@ -11,7 +11,7 @@ echo
 ruby -e "print %q{Please type 'production' to continue: }; unless gets.chomp == 'production'; puts 'Exiting...'; exit -1; end"
 
 HEROKU_CONSTANTS=.heroku_env_production
-source bin/roboconf.sh
+source ../roboconf/roboconf.sh
 run_heroku_config_if_settings_changed
 
 git push "$app" master
