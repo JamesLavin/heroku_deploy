@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit
 
+echo "In deploy_staging.sh - about to source roboconf.sh"
 source ../roboconf/roboconf.sh
 
 if [ $# -ne 1 ]; then
